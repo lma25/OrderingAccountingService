@@ -6,8 +6,6 @@ import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
 
-import java.util.Date;
-
 @AllArgsConstructor
 @Setter
 @Getter
@@ -17,7 +15,7 @@ public class Payment {
     @NonNull
     private Amount localAmount;
     @NonNull
-    private Date transferDate;
+    private Long transferDate;
     private Double localToFunctionalFxRate;
     private String functionalAmountCurrency;
     private Amount functionalAmount;
