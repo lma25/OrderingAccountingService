@@ -2,17 +2,18 @@ package com.ad.oas.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NonNull;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 
+import java.util.Arrays;
 import java.util.List;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Setter
 public class Customer {
-    @NonNull
     @Id
     private String customerId;
     private String wechatId;
@@ -20,5 +21,5 @@ public class Customer {
     private String lastName;
     private String emailAddress;
     private String phoneNumber;
-    private List<Address> addresses;
+    private List<Address> addresses = Arrays.asList(new Address());
 }

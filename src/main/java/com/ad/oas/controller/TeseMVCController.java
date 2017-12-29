@@ -43,7 +43,7 @@ public class TeseMVCController {
         return "OK";
     }
 
-    public void reposittoryTest(){
+    public void repositoryTest(){
         addressRepository.save(
                 new Address("123",
                         "",
