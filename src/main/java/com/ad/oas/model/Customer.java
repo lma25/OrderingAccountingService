@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
 @Setter
 public class Customer {
     @NonNull
+    @Id
     private String customerId;
     private String wechatId;
     private String firstName;

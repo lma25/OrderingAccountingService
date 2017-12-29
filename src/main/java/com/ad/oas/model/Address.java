@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
 
 @AllArgsConstructor
 @Setter
 @Getter
 public class Address {
     @NonNull
+    @Id
     private String addressId;
     @NonNull
     private String customerId;
@@ -20,7 +22,7 @@ public class Address {
     private String addressLine1;
     private String addressLine2;
     private String city;
-    private String postCode;
+    private String zipCode;
     private String stateOrProvince;
     private String country;
 }
