@@ -14,7 +14,6 @@ public class ResultUtils {
     @Resource(name="objectMapper")
     private ObjectMapper objectMapper;
 
-
     public String resultToString(@NonNull final Result result){
         try {
             return objectMapper.writeValueAsString(result);
